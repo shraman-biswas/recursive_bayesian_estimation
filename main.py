@@ -4,7 +4,7 @@ from RecursiveBayesianEstimator import RecursiveBayesianEstimator
 def main():
 	print '[ recursive bayesian estimator ]'
 
-	print ("Made by: Shaun"
+	print ("Made by: Shraman Biswas"
 			"\nDate: Dec 2015"
 			"\nDescription:"
 			"\nEstimates actual temperature value from noisy sensor measurements"
