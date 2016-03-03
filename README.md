@@ -1,4 +1,5 @@
 Recursive Bayesian Estimator
 ============================
 
-A noise filter that eliminates wide band noise using recursive Bayesian estimation. 
+A real-time wideband noise filter using recursive Bayesian estimation.  
+Estimates the actual temperature sensor reading over time from noisy temperature sensor measurements.  
