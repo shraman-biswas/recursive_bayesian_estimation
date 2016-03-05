@@ -4,8 +4,9 @@ from RecursiveBayesianEstimation import RecursiveBayesianEstimation
 def main():
 	print '[ recursive bayesian estimation ]'
 
-	# parameter
+	# parameters
 	T = 50	# actual temperature reading
+	params = [T]
 
 	# display header text
 	print ("Made by: Shraman Biswas"
@@ -27,7 +28,7 @@ def main():
 	print '\nActual temperature:\t%d degrees C' % T
 
 	# start recursive bayesian estimation
-	rbe = RecursiveBayesianEstimation()
+	rbe = RecursiveBayesianEstimation(params)
 
 
 if __name__ == '__main__':

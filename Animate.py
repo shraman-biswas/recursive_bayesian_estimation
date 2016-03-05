@@ -6,9 +6,9 @@ from matplotlib import pyplot as plt
 
 class Animate:
 
-	def __init__(self):
+	def __init__(self, params):
 		# setup
-		self._setup_params()
+		self._setup_params(params)
 		self._create_data()
 		self._setup_plot()
 		self._setup_axes()

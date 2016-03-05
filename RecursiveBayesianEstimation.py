@@ -40,12 +40,13 @@ class RecursiveBayesianEstimation(Animate):
 		return estimate
 
 	# setup parameters
-	def _setup_params(self):
-		self._font_size = 15
+	def _setup_params(self, params):
+		self._font_size = 15	# animation plot font size
 		self._sigma = 10	# standard deviation of noise
 		self._N = 100 		# number of samples
 		self._M = 100		# number of discrete temperature levels
-		self._T = self._M / 2	# temperature
+		self._T = float(params[0])
+		self._T = self._T if (self._T > 0) and (self._T < 100) else 50
 
 	# create recursive Bayesian estimation data
 	def _create_data(self):
