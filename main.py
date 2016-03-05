@@ -1,9 +1,13 @@
-from RecursiveBayesianEstimator import RecursiveBayesianEstimator
+from RecursiveBayesianEstimation import RecursiveBayesianEstimation
 
 
 def main():
-	print '[ recursive bayesian estimator ]'
+	print '[ recursive bayesian estimation ]'
 
+	# parameter
+	T = 50	# actual temperature reading
+
+	# display header text
 	print ("Made by: Shraman Biswas"
 			"\nDate: Dec 2015"
 			"\nDescription:"
@@ -19,9 +23,11 @@ def main():
 			"\n\t\tP(D) -> normalizing term"
 			"\n\t\tP(H|D) -> posterior")
 
-	T = 50
+	# display temperature
 	print '\nActual temperature:\t%d degrees C' % T
-	rbe = RecursiveBayesianEstimator()
+
+	# start recursive bayesian estimation
+	rbe = RecursiveBayesianEstimation()
 
 
 if __name__ == '__main__':
